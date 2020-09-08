@@ -1,0 +1,94 @@
+.container{
+  background-color: white;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.jumbotron {
+  margin-top: 2rem;
+  background-image: url("https://res.cloudinary.com/jerrick/image/upload/fl_progressive,q_auto,w_1024/mmltkzsqdyvlqh0bwbza.jpg");
+  background-size: cover;
+
+}
+.av{
+  color: white;
+}
+
+.to{
+  margin: 50px auto;
+  width:30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border:none;
+  font-family: 'Shadows Into Light', cursive;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+}
+.at{
+  float:right;
+
+}
+
+.basic{
+  border-radius: 50%;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
+
+a { color: inherit; }
+
+.tob{
+  margin: 50px auto;
+  width:30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border:none;
+  font-family: 'Shadows Into Light', cursive;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Rokkitt', serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+.display-4 av{
+
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.display-4 av{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

@@ -1,0 +1,19 @@
+<%- include ("./partials/header")%>
+<% var data = [
+    "https://thumbs.dreamstime.com/b/new-life-concept-sport-shoes-word-ready-written-asphalt-ground-motivational-slogan-new-life-concept-motivational-slogan-144709084.jpg",
+    "https://addicted2success.com/wp-content/uploads/2013/08/Images-43-Of-The-Most-Popular-Motivation-Picture-Quotes.png",
+    "https://m.media-amazon.com/images/I/61OjeTqqJTL._SS500_.jpg",
+    "https://cdn.lifehack.org/wp-content/uploads/2016/12/best-motivational-quotes.jpeg",
+    "https://cdn.lifehack.org/wp-content/uploads/2016/12/best-motivational-quotes.jpeg"
+]
+var x=Math.round(Math.random()*4) %>
+
+<div id = "content">
+  <h1><center>YOU CAN!</center></h1>
+</div>
+
+<div id="img">
+  <center><img src="<%= data[x] %>"></center>
+</div>
+
+<%- include ("./partials/footer")%>

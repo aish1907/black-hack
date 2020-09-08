@@ -1,0 +1,35 @@
+<%- include ("./partials/header")%>
+
+    <div class="container to">
+      <%todos.forEach(function(todo){ %>
+        <div class="meta">
+          <span><%= todo.created.toDateString() %></span>
+        </div>
+        <div class="at">
+          <form id="delete" action="/todos/<%= todo._id %>?_method=DELETE" method="POST">
+            <button class="basic">X</button>
+          </form>
+        </div>
+        <div class="menuitem" id="tex">
+          <bold>
+           <input type="checkbox" name="val">
+           <label class="strikethrough" for="val"><a href="/todos/<%= todo._id%>"><%=todo.title%></a></label>
+          </bold>
+        </div>
+
+        <div class="a">
+          <p><%= todo.body %></p>
+        </div>
+
+      <% }) %>
+      <% function myFunction() {
+         var element = document.getElementById("tex");
+         element.classList.toggle("mystyle");
+       } %>
+
+      <div class="add">
+       <a href="/todos/new"><button type="button" name="button">+ Add</button></a>
+      </div>
+    </div>
+
+<%- include ("./partials/footer")%>

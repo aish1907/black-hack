@@ -1,0 +1,25 @@
+<%- include ("./partials/header")%>
+  <div class = "container">
+    <div class="jumbotron">
+     <h1 class="display-4 av" id="demo">Todo For U!</h1>
+     <%
+        var i = 0;
+        var txt = 'Todo For U!';
+        var speed = 50;
+
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+     %>
+
+     <p class="lead av"> Welcome to your todos</p>
+     <hr class="my-4 av">
+     <p>Start your journey of careful planning and an accountable life experience here.Let us not let another day go waste without planning.Let us plan for a better tommorrow together.</p>
+     <a class="btn btn-primary btn-lg" href="/todos" role="button">Learn more</a>
+   </div>
+  </div>
+<%- include ("./partials/footer")%>
